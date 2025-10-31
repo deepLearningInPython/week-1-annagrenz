@@ -30,8 +30,8 @@ def step(x):
 
 # Your code here:
 def ReLu(arr, cutoff = 0):
-  arr = np.array(arr)
-  return np.maximum(arr, cutoff)
+  arr = array(arr)
+  return maximum(arr, cutoff)
   
 
 
