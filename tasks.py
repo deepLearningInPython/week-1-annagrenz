@@ -11,12 +11,14 @@ import numpy
 #The name of the function should be step
 
 # Your code here:
-# -----------------------------------------------
 
-def step
+def step(x):
+  if x > 1:
+    return (1)
+  else:
+    return (-1)
 
 
-# -----------------------------------------------
 
 
 # Task 2:
@@ -27,11 +29,10 @@ def step
 
 
 # Your code here:
-# -----------------------------------------------
-def ReLu
-
-
-# -----------------------------------------------
+def ReLu(arr, cutoff = 0):
+  arr = np.array(arr)
+  return np.maximum(arr, cutoff)
+  
 
 
 # Task 3:
@@ -42,9 +43,8 @@ def ReLu
 #Name the function neural_net_layer
 
 # Your code here:
-# -----------------------------------------------
+def neural_net_layer(arr, arr_2):
+  mult_arr = arr @ arr_2
+  return ReLu(mult_arr)
+  
 
-def neural_net_layer
-
-
-# ------------------------------------------
